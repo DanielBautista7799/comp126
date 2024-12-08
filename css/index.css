@@ -23,7 +23,7 @@ main{
     flex-direction: row;
     gap: 2vw;
     align-items: flex-start;
-  overflow-x: scroll;
+
 }
 header {
     position: relative;
