@@ -15,13 +15,15 @@ body {
   
 
 
-main {
+main{
+    width: 90%;
+    height: 65vh;
+    margin-top: 1.5vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: flex-start;
+  overflow-x: scroll;
 }
 header {
     position: relative;
