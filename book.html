@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - Precise Cutz & Styles</title>
+    <link rel="stylesheet" href="css/book.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <span id="name">Precise Cutz & Styles</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="headerLine"></div>
+
+    <main>
+        <div class="booking-container">
+            <h1>Book Your Appointment</h1>
+            <form action="submit_booking.php" method="POST" class="booking-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+                <label for="service">Choose a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="bald_fade">Bald Fade</option>
+                    <option value="classic_taper">Classic Taper Fade</option>
+                    <option value="low_fade_beard">Low Fade with Beard</option>
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="submit-btn">Book Appointment</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div id="address">
+                <h3>Address</h3>
+                <p>205 N Columbia St,<br>Chapel Hill, NC 27514</p>
+            </div>
+            <div id="hours">
+                <h3>Hours</h3>
+                <ul>
+                    <li>Thursday: 8 AM–8 PM</li>
+                    <li>Friday: 8 AM–6 PM</li>
+                    <li>Saturday: 8 AM–4 PM</li>
+                    <li>Sunday: Closed</li>
+                    <li>Monday: Closed</li>
+                    <li>Tuesday: 8 AM–8 PM</li>
+                    <li>Wednesday: 8 AM–8 PM</li>
+                </ul>
+            </div>
+            <div id="contact">
+                <h3>Contact</h3>
+                <p>Phone: <a href="tel:9199424776">(919) 942-4776</a></p>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>© COMP 126, Copyright 2024</p>
+        </div>
+    </footer>
+
+</body>
+</html>
