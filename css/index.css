@@ -67,11 +67,11 @@ header {
     -1px -1px 0 #fff,
     1px -1px 0 #fff,
     -1px 1px 0 #fff,
-    1px 1px 0 #fff, /* Outer shadows for thicker outline */
+    1px 1px 0 #fff, 
     -.5px -.5px 0 #fff,
     .5px -.5px 0 #fff,
     -.5px .5px 0 #fff,
-    .5px .5px 0 #fff; /* Inner shadows for reinforced outline */
+    .5px .5px 0 #fff; 
     border-radius: 4px;
     padding: 5px 10px;
     font-size: 2vw;
@@ -168,26 +168,8 @@ main{
 
 }
 
-#pic1{
-    height: 70%;
-    width: 100%;
-    background-color: white;
-    background-image: url(img/cut1.jpg);
-    background-size: cover;
-}
-#pic2{
-    height: 70%;
-    width: 100%;
-    background-color: white;
-    background-image: url(img/cut2.jpg);
-    background-size: cover;
-}
-#pic3{
-    height: 70%;
-    width: 100%;
-    background-color: white;
-    background-image: url(img/cut3.jpg);
-    background-size: cover;
+img{
+    height: 40vh;
 }
 .text{
     color: white;
@@ -210,16 +192,16 @@ footer {
 }
 
 #footer-content {
-    width: 90%; /* Restricts content width for better readability */
+    width: 90%; 
     display: flex;
-    justify-content: space-between; /* Distributes sections evenly */
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
-    gap: 20px; /* Adds spacing between sections */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 20px; 
 }
 
 #footer-content div {
-    flex: 1; /* Makes each section take up equal space */
-    min-width: 200px; /* Prevents sections from becoming too small */
+    flex: 1; 
+    min-width: 200px; 
 }
 
 h3 {
