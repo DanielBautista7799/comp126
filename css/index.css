@@ -170,21 +170,21 @@ main{
     height: 70%;
     width: 100%;
     background-color: white;
-    background-image: url(/img/cut1.jpg);
+    background-image: url(img/cut1.jpg);
     background-size: cover;
 }
 #pic2{
     height: 70%;
     width: 100%;
     background-color: white;
-    background-image: url(/img/cut2.jpg);
+    background-image: url(img/cut2.jpg);
     background-size: cover;
 }
 #pic3{
     height: 70%;
     width: 100%;
     background-color: white;
-    background-image: url(/img/cut3.jpg);
+    background-image: url(img/cut3.jpg);
     background-size: cover;
 }
 .text{
