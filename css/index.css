@@ -2,7 +2,8 @@
 body {
     margin: 0;
     font-family: "Moirai One", system-ui;
-    overflow-x: hidden;
+    overflow:hidden;
+overflow-y: scroll;
     background-color: black;
     background-size: contain;
     display: flex;
@@ -15,15 +16,13 @@ body {
   
 
 
-main{
-    width: 90%;
-    height: 65vh;
-    margin-top: 1.5vh;
+main {
     display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    align-items: flex-start;
-
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    
 }
 header {
     position: relative;
@@ -32,7 +31,8 @@ header {
     display: flex;
     flex-direction: row;
     font-weight: 900;
-    font-size: 1.2vw;
+    font-size: 2vw;
+
     margin-top: 0;
     background: linear-gradient(90deg, #ffffff, #b0b0b0, #000000);
    
@@ -48,7 +48,7 @@ header {
     height: 100%;
     width: 40%; 
     color: white;
-    background-image: url(/img/icon1.png);
+ 
     background-size: 7vw;
     background-repeat: no-repeat;
     background-position-x: 5%; 
@@ -57,6 +57,10 @@ header {
     flex-direction: row;
     gap: 3%; 
     
+}
+
+#icon{
+    height: 8vh;
 }
 
 
@@ -75,6 +79,7 @@ header {
     border-radius: 4px;
     padding: 5px 10px;
     font-size: 2vw;
+    white-space: nowrap;
 }
 
 nav {
@@ -101,9 +106,6 @@ ul.nav-links li {
 ul.nav-links a, #choose a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5vw;
-    
-  
     border-radius: 5px;
     transition: background-color 0.3s;
     text-shadow:
@@ -154,7 +156,7 @@ main{
     flex-direction: row;
     gap: 2vw;
     align-items: flex-start;
-  
+    
 }
 
 .con{
@@ -167,10 +169,11 @@ main{
    
 
 }
-
 img{
     height: 40vh;
 }
+
+
 .text{
     color: white;
 }
@@ -196,7 +199,7 @@ footer {
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap; 
-    gap: 20px; 
+    gap: 20px;
 }
 
 #footer-content div {
@@ -233,4 +236,46 @@ a:hover {
 #copyright{
     height:2vh;
     color: red;
+}
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+    
+  
+
+  
+    main {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+        overflow-x: hidden;
+    }
+
+    .con {
+        width: 100%;
+        gap: 20px;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    footer {
+        padding: 15px 5px;
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    #footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #copyright {
+        font-size: 12px;
+    }
 }
